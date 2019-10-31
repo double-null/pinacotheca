@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Dewberry';
+    src:
+            url('../fonts/Dewberry.ttf')  format('truetype'),
+            url('../fonts/Dewberry.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{height: 100%;}
+body{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dewberry', sans-serif;
+    margin: 0; padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+}
+
+h1{font-weight: bold; text-shadow: 4px -2px 2px red;}
+
+a{color: #f0f0f0; text-decoration: none;}
+
+label{display: block; font-size: 20px; padding-top: 10px;}
+
+header, footer{background-color:black; margin: 0; min-height: 80px; padding: 0; flex: 0 0 auto;}
+
+footer{display: flex; flex-direction: column; justify-content: center; text-align: center;}
+
+img{height:250px; width: 100%; object-fit: fill;}
+
+#wrapper{display:flex; flex-direction: column; min-height: 100%;}
+
+#page{flex: 1 0 auto; background: linear-gradient(to top left, yellow, red);}
+
+.header-block{display: flex; align-items: center;}
+
+.user-bar{color: red; margin: auto; text-align: right; width: 100%;}
+.user-bar-item{padding: 0 15px;}
+.user-bar-item:not(:last-child){border-right: 1px solid red;}
+
+.pict-block{margin-top: 20px;}
+.pict-links{display: flex;}
+.pict-name{width: 100%; text-align: center;}
+#pagination{margin-top: 50px;}
+
+.flash-message {
+    display: none;
+    background: #2f353b none repeat scroll 0 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    bottom: 40px;
+    height: 100px;
+    left: 2%;
+    min-width: 240px;
+    padding: 10px;
+    position: fixed;
+    width: 95%;
+}
+
+input[type='text'], input[type='password'], textarea {
+    border: 0 none;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+input[type='text'], input[type='password'], .file-load{height: 30px;}
+
+input[type='submit']{
+    background: black none repeat scroll 0 0;
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-family: "Dewberry",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 10px;
+    width: 120px;
+}
+
+input[type='submit']:hover{color: red;}
+
+textarea{height: 120px;}
